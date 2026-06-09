@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aakar Videotake is a premium film production house, hosting annual international film festivals, masterclass workshops, and cinema showcases.">
+  <title>Aakar Videotake | Premium Production House & Film Festival</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+      </a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Production House</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="festival.html">Film Festival</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="events.html">Current Events</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO BANNER
+       ========================================== -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-subtitle">Production House & Media Hub</div>
+        <h1 class="hero-title">
+          Crafting Visual <span>Stories That Resonate</span>
+        </h1>
+        <p class="hero-description">
+          Aakar Videotake is an award-winning independent film production house, film festival incubator, and creative workshop platform designed to nurture the next generation of visual storytellers.
+        </p>
+        <div class="hero-actions">
+          <a href="#journey" class="btn btn-primary">Explore Our Legacy</a>
+          <a href="festival.html" class="btn btn-secondary">Submit Your Film</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="video-mockup">
+          <div class="video-inner">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80" alt="Cinematic Studio Background" id="showreel-cover">
+            <video id="showreel-video" src="images/trailer.mp4" preload="auto" playsinline></video>
+            <button class="play-trigger" id="play-button" aria-label="Play showreel"></button>
+            <div class="video-pulse" id="video-pulse"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+  <!-- ==========================================
+       JOURNEY OF THE INSTITUTION (ABOUT US)
+       ========================================== -->
+  <section class="section" id="journey" style="background-color: var(--bg-darker); border-top: 1px solid var(--glass-border);">
+    <div class="container" style="display: grid; grid-template-columns: 1.2fr 0.8fr; align-items: flex-start; gap: 50px;">
+      <div class="flip-wrapper-container">
+        <div class="flip-btn-container">
+          <button class="lang-toggle-btn" id="lang-toggle" onclick="toggleLanguageCard();">
+            🌐 Translate to English / English में देखें
+          </button>
+        </div>
+
+        <div class="flip-card-container" id="language-card">
+          <div class="flip-card-inner">
+            <!-- Front Card: Hindi -->
+            <div class="flip-card-front">
+              <span class="badge badge-gold" style="margin-bottom: 15px;">हमारी यात्रा</span>
+              <h2 style="font-size: 2.2rem; margin-bottom: 20px; font-family: var(--font-heading); color: var(--accent-gold);">यात्रा संस्थान की</h2>
+              
+              <p style="color: var(--text-primary); font-size: 1rem; line-height: 1.8; margin-bottom: 18px; text-align: justify;">
+                आकार वीडियोटेक की स्थापना सन् 1986 में की गई, यह संस्थान तब से लेकर आज तक निरंतर न केवल फिल्म निर्माण का कार्य कर रही है अपितु यह मध्यप्रदेश के संसाधनों में मध्यप्रदेश के कलाकारों के साथ फिल्म निर्माण के क्षेत्र में एक अग्रणी संस्था है।
+              </p>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; margin-bottom: 18px; text-align: justify;">
+                फिल्म निर्माण के क्षेत्र में आकार वीडियोटेक ने इस यात्रा के दौरान अनेकों छोटी-बड़ी फिल्मों का निर्माण किया है। यह फिल्म निर्माण संस्थान 1994 से 2005 तक भारतीय दूरदर्शन की आउट सोर्स प्रोड्यूसर्स पैनल पर इम्पेनल्ड भी रही है। आकार वीडियोटेक ने "धरती पुत्र", "स्वयंवर", "अदिअंत", "बदरा बरस गए", "तुम वो नहीं", "सपन", "आठवाँ फेरा", "समर्पिता" जैसी सामाजिक सरोकारों वाली फिल्मों का निर्माण किया वहीं "उजास", "योग कल्पतरू" और "नेता पुरजोर बाबूलाल गौर" जैसी बायोपिक फिल्मों का निर्माण भी किया डाक्यूमेंट्री फिल्मों के निर्माण के क्षेत्र में भी अनगिनत सार्थक फिल्मों का निर्माण किया है।
+              </p>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; text-align: justify;">
+                आकार वीडियोटेक की यह यात्रा सतंत् पेतीस वर्षों से भी अधिक समय से निरंतर चली आ रही है। मध्यप्रदेश के नवोदित और शौकिया फिल्मकारों को मंच प्रदान करने एवं उनके किये कार्यों को पुरूस्कृत करने हेतु 2009 से "आकार फिल्मोत्सव" आरंभ किया। इस फिल्मोत्सव के माध्यम से अब तक 100 से अधिक फिल्मों का प्रदर्शन कर उनसे जुड़ी प्रतिभाओं को सम्मानित किया जा चुका है। आकार वीडियोटेक का यह आयोजन पूर्णतः अव्यवसायिक है। जो निरंतर जारी है।
+              </p>
+            </div>
+            
+            <!-- Back Card: English -->
+            <div class="flip-card-back">
+              <span class="badge badge-amber" style="margin-bottom: 15px;">Our Journey</span>
+              <h2 style="font-size: 2.2rem; margin-bottom: 20px; font-family: var(--font-heading); color: var(--accent-gold);">The Journey of the Institution</h2>
+              
+              <p style="color: var(--text-primary); font-size: 1rem; line-height: 1.8; margin-bottom: 18px; text-align: justify;">
+                Aakar Videotech was established in the year 1986. Since then, the institution has continuously engaged not only in film production but has also emerged as a pioneer in the field of filmmaking, collaborating with local artists of Madhya Pradesh using state resources.
+              </p>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; margin-bottom: 18px; text-align: justify;">
+                During this creative journey, Aakar Videotech has produced numerous small and large-scale films in the field of cinematography. This production house was empanelled on the Outsource Producers Panel of Indian Doordarshan from 1994 to 2005. Aakar Videotech has produced socially relevant films like "Dharti Putra", "Swayamvar", "Adiant", "Badra Baras Gaye", "Tum Wo Nahi", "Sapan", "Aathva Phera", and "Samarpita", alongside biopics such as "Ujaas", "Yog Kalpataru", and "Neta Purjor Babulal Gaur", in addition to countless impactful documentary films.
+              </p>
+              <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; text-align: justify;">
+                Aakar Videotech's journey has continued steadily for over thirty-five years. To provide a platform and recognize the efforts of emerging and amateur filmmakers in Madhya Pradesh, the "Aakar Film Festival" was launched in 2009. Through this festival, more than 100 films have been screened, honoring the creative talents behind them. This initiative by Aakar Videotech is completely non-commercial and remains ongoing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="position: sticky; top: 120px;">
+        <!-- Beautiful visual showing film production / festival archives -->
+        <div class="glass-card" style="padding: 25px; border-color: rgba(229, 184, 66, 0.15);">
+          <h3 style="color: #fff; margin-bottom: 15px; font-size: 1.3rem; font-family: var(--font-heading);">Aakar Filmotsav (आकार फिल्मोत्सव)</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6;">
+            Established in 2009, Aakar Filmotsav acts as a non-commercial platform providing screenings and awards for independent and emerging filmmakers.
+          </p>
+          <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <div style="background: rgba(229, 184, 66, 0.1); border: 1px solid var(--accent-gold); padding: 12px; border-radius: 8px; text-align: center; flex: 1;">
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent-gold); font-family: var(--font-heading);">1986</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Established</div>
+            </div>
+            <div style="background: rgba(255, 140, 0, 0.1); border: 1px solid var(--accent-amber); padding: 12px; border-radius: 8px; text-align: center; flex: 1;">
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--accent-amber); font-family: var(--font-heading);">100+</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Films Screened</div>
+            </div>
+          </div>
+          <a href="festival.html" class="btn btn-primary" style="width: 100%;">Explore Film Festival</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-desc">
+          <a href="index.html" class="logo">
+            <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+          </a>
+          <p>Premium production house, international film festival hosting, and professional industry masterclasses.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Production House</a></li>
+            <li><a href="festival.html">Film Festival</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="events.html">Current Events</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-info">
+            <span>📍 S-3, Indus Muskaan Plaza, Ayodhya Bypass Road (upto Muskaan Hospital), Bhopal - 462041, Madhya Pradesh, India</span>
+            <span>✉️ aakar87@yahoo.com / movimaker@in.com</span>
+            <span>📞 +91-7415508223</span>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Receive schedule updates & workshop openings.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email address" class="form-control" required>
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aakar Videotake. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js?v=6.0"></script>
+</body>
+</html>

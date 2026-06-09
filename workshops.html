@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join premium filmmaking workshops, screenwriting classes, and post-production masterclasses. Reserve seats with our interactive seating chart.">
+  <title>Aakar Filmmaking Workshops & Masterclasses</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .workshops-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .workshop-card {
+      background: var(--bg-card);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: var(--transition-smooth);
+    }
+
+    .workshop-card:hover {
+      border-color: var(--glass-border-hover);
+      transform: translateY(-8px);
+      box-shadow: var(--glass-shadow);
+    }
+
+    .workshop-img-box {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .workshop-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+
+    .workshop-card:hover .workshop-img {
+      transform: scale(1.05);
+    }
+
+    .workshop-price-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: var(--bg-darker);
+      color: var(--accent-gold);
+      border: 1px solid var(--accent-gold);
+      padding: 5px 12px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: var(--gold-glow);
+    }
+
+    .workshop-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .workshop-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .workshop-title {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .workshop-text {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      flex-grow: 1;
+    }
+
+    .booking-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .booking-receipt-box {
+      background: var(--bg-card);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 30px;
+      height: fit-content;
+      box-shadow: var(--glass-shadow);
+    }
+
+    .receipt-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--glass-border);
+      padding: 12px 0;
+      font-size: 0.95rem;
+    }
+
+    .receipt-item.total {
+      border-bottom: none;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--accent-gold);
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar scrolled" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+      </a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Production House</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="festival.html">Film Festival</a></li>
+        <li><a href="workshops.html" class="active">Workshops</a></li>
+        <li><a href="events.html">Current Events</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO BANNER
+       ========================================== -->
+  <header class="hero" style="min-height: 60vh; padding-top: 140px;">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="container" style="display: block; text-align: center;">
+      <span class="badge badge-gold">Filmmaking School</span>
+      <h1 class="hero-title" style="margin-top: 15px; margin-bottom: 15px; font-size: 3.5rem;">
+        Learn From The <span>Industry Experts</span>
+      </h1>
+      <p class="hero-description" style="margin: 0 auto; max-width: 650px;">
+        Hands-on technical workshops and creative masterclasses focused on screenwriting, cinematography, and post-production workflows.
+      </p>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       WORKSHOPS LIST
+       ========================================== -->
+  <section class="section" id="workshops-list" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-amber">Masterclasses</span>
+        <h2>Upcoming Programs</h2>
+        <p>Book a workshop below to secure your entry. Each course includes practical certification and studio lab access.</p>
+      </div>
+
+      <div class="workshops-container">
+        <!-- Workshop 1 -->
+        <div class="workshop-card">
+          <div class="workshop-img-box">
+            <img class="workshop-img" src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=500&q=80" alt="Cinematography Workshop">
+            <div class="workshop-price-badge">$149</div>
+          </div>
+          <div class="workshop-content">
+            <div class="workshop-meta">
+              <span>📅 Dec 02-04</span>
+              <span>🗣️ Rahul Dev</span>
+            </div>
+            <h3 class="workshop-title">Advanced Cinematography</h3>
+            <p class="workshop-text">Master lighting design, camera movement, anamorphic shot composition, and camera settings on ARRI/RED cameras.</p>
+            <span class="badge badge-gold" style="width: fit-content; margin-bottom: 20px;">Masterclass</span>
+            <a href="#booking" class="btn btn-secondary" style="width: 100%; text-align: center;">Reserve Seat</a>
+          </div>
+        </div>
+
+        <!-- Workshop 2 -->
+        <div class="workshop-card">
+          <div class="workshop-img-box">
+            <img class="workshop-img" src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80" alt="Screenwriting Workshop">
+            <div class="workshop-price-badge">$149</div>
+          </div>
+          <div class="workshop-content">
+            <div class="workshop-meta">
+              <span>📅 Dec 09-11</span>
+              <span>🗣️ Helena Carter</span>
+            </div>
+            <h3 class="workshop-title">Screenplay & Character Development</h3>
+            <p class="workshop-text">Drafting subplots, structuring character transformations, dialog design, and pitching to studio executives.</p>
+            <span class="badge badge-amber" style="width: fit-content; margin-bottom: 20px;">Intermediate</span>
+            <a href="#booking" class="btn btn-secondary" style="width: 100%; text-align: center;">Reserve Seat</a>
+          </div>
+        </div>
+
+        <!-- Workshop 3 -->
+        <div class="workshop-card">
+          <div class="workshop-img-box">
+            <img class="workshop-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=500&q=80" alt="Post Production Workshop">
+            <div class="workshop-price-badge">$149</div>
+          </div>
+          <div class="workshop-content">
+            <div class="workshop-meta">
+              <span>📅 Dec 16-18</span>
+              <span>🗣️ Marcus Vance</span>
+            </div>
+            <h3 class="workshop-title">Davinci Resolve Color Grading</h3>
+            <p class="workshop-text">Color correction, primary & secondary node structures, HDR color workflows, and matching look matching techniques.</p>
+            <span class="badge badge-gold" style="width: fit-content; margin-bottom: 20px;">Masterclass</span>
+            <a href="#booking" class="btn btn-secondary" style="width: 100%; text-align: center;">Reserve Seat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE BOOKING CHART
+       ========================================== -->
+  <section class="section" id="booking" style="border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-gold">Seat Booking</span>
+        <h2>Choose Your Seat</h2>
+        <p>Select your preferred seating layout for the next live masterclass at our E-102 Cinema Studio Hall.</p>
+      </div>
+
+      <div class="booking-grid">
+        <!-- Interactive seat layout -->
+        <div>
+          <div class="seats-container">
+            <div class="screen-indicator"></div>
+            <div class="seating-chart" id="seating-chart">
+              <!-- Dynamically generated seats inside main.js -->
+            </div>
+            
+            <div class="seating-legend">
+              <div class="legend-item">
+                <div class="seat"></div>
+                <span>Available</span>
+              </div>
+              <div class="legend-item">
+                <div class="seat selected"></div>
+                <span>Selected</span>
+              </div>
+              <div class="legend-item">
+                <div class="seat occupied"></div>
+                <span>Occupied</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seating calculations and details -->
+        <div>
+          <div class="booking-receipt-box">
+            <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Order Summary</h3>
+            
+            <form onsubmit="event.preventDefault(); if (document.getElementById('total-seats').innerText === '0') { alert('Please select at least one seat first!'); return; } alert('Booking Confirmed! Check your email for ticket instructions.'); this.reset(); location.reload();">
+              <div class="form-group" style="margin-bottom: 15px;">
+                <label class="form-label" style="font-size: 0.8rem;">Select Masterclass</label>
+                <select class="form-control select-control" required>
+                  <option value="cinematography">Advanced Cinematography ($149)</option>
+                  <option value="screenwriting">Screenplay & Character Development ($149)</option>
+                  <option value="color">Davinci Resolve Color Grading ($149)</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 15px;">
+                <label class="form-label" style="font-size: 0.8rem;">Attendee Email</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              
+              <div class="receipt-item">
+                <span>Selected Seats</span>
+                <span id="seat-numbers" style="color: var(--accent-gold); font-weight: 600;">None</span>
+              </div>
+              
+              <div class="receipt-item">
+                <span>Tickets Count</span>
+                <span id="total-seats" style="font-weight: 600;">0</span>
+              </div>
+
+              <div class="receipt-item total">
+                <span>Total Cost</span>
+                <span id="total-price">$0</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Book Tickets</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-desc">
+          <a href="index.html" class="logo">
+            <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+          </a>
+          <p>Premium production house, international film festival hosting, and professional industry masterclasses.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Production House</a></li>
+            <li><a href="festival.html">Film Festival</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="events.html">Current Events</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-info">
+            <span>📍 S-3, Indus Muskaan Plaza, Ayodhya Bypass Road (upto Muskaan Hospital), Bhopal - 462041, Madhya Pradesh, India</span>
+            <span>✉️ aakar87@yahoo.com / movimaker@in.com</span>
+            <span>📞 +91-7415508223</span>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Receive schedule updates & workshop openings.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email address" class="form-control" required>
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aakar Videotake. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js?v=6.0"></script>
+</body>
+</html>

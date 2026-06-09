@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Company profile and history of Aakar Videotake, a premium film production house empanelled by Doordarshan since 1987.">
+  <title>About Us | Aakar Videotake</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 50px;
+      margin-top: 40px;
+      align-items: start;
+    }
+    
+    @media (max-width: 992px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .intro-sidebar {
+      position: sticky;
+      top: 110px;
+    }
+    
+    .activities-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    
+    .activity-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--glass-border);
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .production-card {
+      margin-bottom: 25px;
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+
+    .production-card:hover {
+      transform: translateX(5px);
+      border-color: var(--accent-gold);
+    }
+
+    .prod-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed var(--glass-border);
+      padding-bottom: 8px;
+    }
+
+    .prod-title {
+      font-size: 1.15rem;
+      color: var(--accent-gold);
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .prod-year {
+      background: rgba(229, 184, 66, 0.1);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+      padding: 2px 8px;
+      font-size: 0.75rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .prod-body {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar scrolled" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+      </a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Production House</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="festival.html">Film Festival</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="events.html">Current Events</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO BANNER
+       ========================================== -->
+  <header class="hero" style="min-height: 50vh; padding-top: 130px; padding-bottom: 50px;">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="container" style="display: block; text-align: center;">
+      <span class="badge badge-gold">Company Profile</span>
+      <h1 class="hero-title" style="margin-top: 15px; margin-bottom: 15px; font-size: 3.5rem;">
+        About <span>Aakar Videotake</span>
+      </h1>
+      <p class="hero-subtitle" style="color: var(--accent-gold); font-size: 1.25rem; font-style: italic; margin-bottom: 0;">
+        "To gain recognition as a classic film producer."
+      </p>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT SECTION
+       ========================================== -->
+  <section class="section" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Left Column: Introduction & Vision -->
+        <div class="intro-sidebar">
+          <div class="glass-card" style="padding: 35px; border-color: rgba(229, 184, 66, 0.15);">
+            <span class="badge badge-gold" style="margin-bottom: 15px;">Introduction</span>
+            <h2 style="font-size: 2rem; margin-bottom: 20px; color: #fff;">Establishment & Vision</h2>
+            
+            <p style="color: var(--text-primary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px; text-align: justify;">
+              <strong>Aakar Videotake</strong> was incorporated as a professional film production unit in <strong>1987</strong>. Over the past several decades, we have established ourselves as a pioneer in storytelling, empanelled on the Outsource Producers Panel of Indian Doordarshan.
+            </p>
+            
+            <h4 style="color: #fff; margin-bottom: 12px; font-size: 1.1rem; font-weight: 600;">Our Core Activities:</h4>
+            <ul class="activities-list">
+              <li class="activity-item"><span>🎬</span> Cinema & Films</li>
+              <li class="activity-item"><span>📺</span> TV Software Programs</li>
+              <li class="activity-item"><span>🎥</span> Commercial Ad Films</li>
+              <li class="activity-item"><span>🎞️</span> Documentaries</li>
+            </ul>
+
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px; text-align: justify;">
+              In this creative journey, we have successfully produced over <strong>23 Telefilms</strong>, <strong>10 Documentaries</strong>, and numerous <strong>Ad-films</strong>. These works have been broadcasted nationwide on <strong>DDI (Doordarshan India)</strong>, Doordarshan Bhopal, and other prestigious regional networks including Jaipur, Lucknow, Patna, and Jalandhar.
+            </p>
+
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; margin-bottom: 25px; text-align: justify;">
+              Beside this, Aakar Videotake works closely with multiple prestigious channels in the country. Our future pipeline includes multiple scriptwriting projects, with plans to produce a minimum of <strong>3 films per year</strong> and expand national channel broadcasting schedules.
+            </p>
+
+            <div style="background: rgba(229, 184, 66, 0.05); border: 1px dashed var(--accent-gold); padding: 20px; border-radius: 12px; text-align: center;">
+              <h4 style="color: var(--accent-gold); margin-bottom: 5px; font-size: 1.1rem;">Empanelled by Doordarshan</h4>
+              <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0;">Official Media Production Partner Since 1994</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Our Best Productions -->
+        <div>
+          <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+            <span class="badge badge-amber">Our Legacy</span>
+            <h2 style="font-size: 2.2rem; color: #fff;">Our Best Productions</h2>
+            <p>A history of award-winning broadcasts and critically acclaimed cinematic projects.</p>
+          </div>
+
+          <div class="productions-list">
+            
+            <!-- 1. Dharti Putra -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">1. Dharti Putra</h3>
+                <span class="prod-year">1988</span>
+              </div>
+              <p class="prod-body">
+                This telefilm was awarded three prestigious "Film Saurabh" awards (Best Direction, Best Cinematography, and Best Acting) by the Film Journalist Association of Madhya Pradesh in 1988. It was exhibited at the Madhya Pradesh Sarpanch Sammelan, drawing an audience of over 10,000 delegates from across the state.
+              </p>
+            </div>
+
+            <!-- 2. Hum Jiyenge Aise -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">2. Hum Jiyenge Aise</h3>
+                <span class="prod-year">1989</span>
+              </div>
+              <p class="prod-body">
+                Produced for public awareness and civic education, this telefilm was telecasted on the national network of Doordarshan to promote civic awareness and guide Indian citizens in all aspects of life.
+              </p>
+            </div>
+
+            <!-- 3. Vandhan Apna -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">3. Vandhan Apna</h3>
+                <span class="prod-year">1989</span>
+              </div>
+              <p class="prod-body">
+                A documentary focused on forest preservation, produced in collaboration with the Uttar Pradesh Chalchitra Vikas Nigam. The film was highly acclaimed and declared the Best Documentary Film of the Year 1989.
+              </p>
+            </div>
+
+            <!-- 4. Addiant -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">4. Addiant</h3>
+                <span class="prod-year">1990</span>
+              </div>
+              <p class="prod-body">
+                A feature film certified with a 'Universal' rating by the Indian Film Censor Board. The film's premier was inaugurated by the Hon'ble former Chief Minister of Madhya Pradesh, Shri Arjun Singh.
+              </p>
+            </div>
+
+            <!-- 5. Barood Ke Saudagar -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">5. Barood Ke Saudagar</h3>
+                <span class="prod-year">1993</span>
+              </div>
+              <p class="prod-body">
+                A landmark release in regional television, this production was the very first telefilm ever produced and broadcasted by Doordarshan Bhopal.
+              </p>
+            </div>
+
+            <!-- 6. Badra Baras Gaye -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">6. Badra Baras Gaye</h3>
+                <span class="prod-year">1995</span>
+              </div>
+              <p class="prod-body">
+                A critically acclaimed drama recognized as the Best Telefilm of the Year 1995 by Doordarshan Bhopal.
+              </p>
+            </div>
+
+            <!-- 7. Tum Who Nahin -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">7. Tum Who Nahin</h3>
+                <span class="prod-year">1997</span>
+              </div>
+              <p class="prod-body">
+                Produced and telecasted in 1997, this telefilm was honored with the Best Cinematography Award by Doordarshan Bhopal for its outstanding visual language.
+              </p>
+            </div>
+
+            <!-- 8. Aasara -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">8. Aasara</h3>
+                <span class="prod-year">1997</span>
+              </div>
+              <p class="prod-body">
+                Produced specifically for the Raipur Doordarshan regional network, this project was awarded the Best Telefilm of the Year 1997.
+              </p>
+            </div>
+
+            <!-- 9. Inhen Samhaliye -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">9. Inhen Samhaliye</h3>
+                <span class="prod-year">2000</span>
+              </div>
+              <p class="prod-body">
+                An environmental documentary film advocating for forest preservation and demonstrating collaborative solutions for the joint management of forestlands.
+              </p>
+            </div>
+
+            <!-- 10. Tapan -->
+            <div class="glass-card production-card">
+              <div class="prod-header">
+                <h3 class="prod-title">10. Tapan</h3>
+                <span class="prod-year">2013</span>
+              </div>
+              <p class="prod-body">
+                A cinematic film produced under the prestigious Commissioned Category of Doordarshan India (DDI) in 2013.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-desc">
+          <a href="index.html" class="logo">
+            <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+          </a>
+          <p>Premium production house, international film festival hosting, and professional industry masterclasses.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Production House</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="festival.html">Film Festival</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="events.html">Current Events</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-info">
+            <span>📍 S-3, Indus Muskaan Plaza, Ayodhya Bypass Road (upto Muskaan Hospital), Bhopal - 462041, Madhya Pradesh, India</span>
+            <span>✉️ aakar87@yahoo.com / movimaker@in.com</span>
+            <span>📞 +91-7415508223</span>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Receive schedule updates & workshop openings.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email address" class="form-control" required>
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aakar Videotake. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js?v=6.0"></script>
+</body>
+</html>

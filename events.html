@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore current events, announcements, and promotional advertisements from Aakar Videotake.">
+  <title>Aakar Videotake | Current Events & Advertisements</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* Styling to ensure posters are vibrant, sharp, and unfaded */
+    #featured-posters .glass-card {
+      background: rgba(7, 8, 12, 0.45) !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+    
+    #featured-posters img {
+      opacity: 1 !important;
+      filter: brightness(1.05) contrast(1.02) !important;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar scrolled" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+      </a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Production House</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="festival.html">Film Festival</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="events.html" class="active">Current Events</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO BANNER
+       ========================================== -->
+  <header class="hero" style="min-height: 50vh; padding-top: 140px;">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="container" style="display: block; text-align: center;">
+      <span class="badge badge-gold">Updates & Promotions</span>
+      <h1 class="hero-title" style="margin-top: 15px; margin-bottom: 15px; font-size: 3.5rem;">
+        Current Events <span>& Advertisements</span>
+      </h1>
+      <p class="hero-description" style="margin: 0 auto; max-width: 650px;">
+        संस्थान की ताज़ा गतिविधियां और विज्ञापन सूचनाएं। Stay informed about the latest events, productions, and commercial services offered by Aakar Videotake.
+      </p>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       FEATURED ANNOUNCEMENT POSTERS
+       ========================================== -->
+  <section class="section" id="featured-posters" style="background-color: var(--bg-darker); border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-gold">Official Announcements</span>
+        <h2>Aakar Film Festival 2026 Posters</h2>
+        <p>Official posters for the 17th Annual Aakar Film Festival. Submissions are open in both Hindi and English categories.</p>
+      </div>
+
+      <!-- Poster Columns -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 40px; justify-content: center; margin-top: 30px;">
+        <!-- English Poster -->
+        <div class="glass-card" style="padding: 15px; border-color: rgba(229, 184, 66, 0.2); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+          <div style="width: 100%; border-radius: 10px; overflow: hidden; position: relative; background: #000; box-shadow: var(--glass-shadow); transition: var(--transition-smooth);">
+            <img src="images/festival_poster_1.jpg" alt="Aakar Film Festival 2026 English Announcement Poster" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <h4 style="color: var(--accent-gold); font-size: 1.1rem; margin-top: 20px; font-family: var(--font-heading); text-align: center;">Official Call for Entries Poster (English)</h4>
+        </div>
+
+        <!-- Hindi Poster -->
+        <div class="glass-card" style="padding: 15px; border-color: rgba(255, 140, 0, 0.2); overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+          <div style="width: 100%; border-radius: 10px; overflow: hidden; position: relative; background: #000; box-shadow: var(--glass-shadow); transition: var(--transition-smooth);">
+            <img src="images/festival_poster_2.jpg" alt="Aakar Film Festival 2026 Hindi Announcement Poster" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <h4 style="color: var(--accent-amber); font-size: 1.1rem; margin-top: 20px; font-family: var(--font-heading); text-align: center;">आधिकारिक प्रविष्टि आमंत्रण पोस्टर (हिंदी)</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CURRENT EVENTS SECTION
+       ========================================== -->
+  <section class="section" id="current-events" style="background-color: var(--bg-dark);">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-amber">What's Happening</span>
+        <h2>Latest Current Events</h2>
+        <p>Stay updated with our active projects, festival deadlines, and local cinematic initiatives.</p>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="card-grid">
+        <!-- Event 1 -->
+        <div class="glass-card" style="border-color: rgba(229, 184, 66, 0.15);">
+          <div class="card-icon" style="font-size: 2.2rem; margin-bottom: 10px;">📅</div>
+          <span style="color: var(--accent-gold); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">July 15, 2026</span>
+          <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: #fff;">Aakar Film Festival 2026 Submissions</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 15px;">
+            The countdown is on! Submit your feature films, documentaries, and short films by 15th July 2026, 03:00 PM. Entries are free.
+          </p>
+          <a href="festival.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px;">Go to Submissions</a>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="glass-card" style="border-color: rgba(255, 140, 0, 0.15);">
+          <div class="card-icon" style="font-size: 2.2rem; margin-bottom: 10px;">🎥</div>
+          <span style="color: var(--accent-amber); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Active Registration</span>
+          <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: #fff;">Cinematography Masterclass 2026</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 15px;">
+            Book your slot for the upcoming 3-day workshop covering lighting, camera operating, and Resolve editing. Limited seats remain.
+          </p>
+          <a href="workshops.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px;">Book Seats</a>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="glass-card" style="border-color: rgba(229, 184, 66, 0.15);">
+          <div class="card-icon" style="font-size: 2.2rem; margin-bottom: 10px;">📣</div>
+          <span style="color: var(--accent-gold); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 8px;">Recent Release</span>
+          <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: #fff;">New Showreel Release</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin-bottom: 15px;">
+            Watch the brand new production showreel "trailer.mp4" on the homepage, highlighting thirty-five years of cinematic history.
+          </p>
+          <a href="index.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 8px 16px;">Watch Showreel</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-desc">
+          <a href="index.html" class="logo">
+            <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+          </a>
+          <p>Premium production house, international film festival hosting, and professional industry masterclasses.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Production House</a></li>
+            <li><a href="festival.html">Film Festival</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="events.html">Current Events</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-info">
+            <span>📍 S-3, Indus Muskaan Plaza, Ayodhya Bypass Road (upto Muskaan Hospital), Bhopal - 462041, Madhya Pradesh, India</span>
+            <span>✉️ aakar87@yahoo.com / movimaker@in.com</span>
+            <span>📞 +91-7415508223</span>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Receive schedule updates & workshop openings.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email address" class="form-control" required>
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aakar Videotake. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js?v=6.0"></script>
+</body>
+</html>
