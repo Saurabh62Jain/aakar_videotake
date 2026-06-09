@@ -48,6 +48,11 @@
 
 body {
   background-color: var(--bg-darker);
+  background-image: url('../images/background.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--text-primary);
   font-family: var(--font-body);
   overflow-x: hidden;
@@ -1534,194 +1539,15 @@ textarea.form-control {
 /* ==========================================
    SITE BACKGROUND CUSTOMIZER WIDGET
    ========================================== */
-body.has-bg-image .section {
+.section {
   background-color: rgba(7, 7, 9, 0.88) !important;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transition: background-color 0.4s ease;
 }
 
-body.has-bg-image .navbar.scrolled {
+.navbar.scrolled {
   background: rgba(7, 7, 9, 0.92) !important;
-}
-
-/* Floating customizer button */
-.bg-customizer-toggle {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent-gold), var(--accent-amber));
-  border: none;
-  cursor: pointer;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--gold-glow);
-  transition: var(--transition-smooth);
-}
-
-.bg-customizer-toggle:hover {
-  transform: scale(1.1) rotate(45deg);
-  box-shadow: var(--gold-glow-hover);
-}
-
-.bg-customizer-toggle svg {
-  width: 24px;
-  height: 24px;
-  fill: #000;
-}
-
-/* Slide-out panel container */
-.bg-customizer-panel {
-  position: fixed;
-  bottom: 90px;
-  right: -350px;
-  width: 310px;
-  background: rgba(13, 14, 18, 0.85);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  padding: 25px;
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
-  z-index: 998;
-  transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.bg-customizer-panel.active {
-  right: 25px;
-}
-
-.bg-customizer-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.bg-customizer-header h4 {
-  font-size: 1.1rem;
-  font-family: var(--font-heading);
-  color: var(--accent-gold);
-}
-
-.bg-customizer-close {
-  background: transparent;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
-.bg-customizer-close:hover {
-  color: #fff;
-}
-
-.bg-customizer-section {
-  margin-bottom: 20px;
-}
-
-.bg-customizer-section h5 {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-muted);
-  margin-bottom: 10px;
-}
-
-/* Presets grid */
-.bg-presets-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.bg-preset-btn {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--glass-border);
-  border-radius: 8px;
-  padding: 10px;
-  color: var(--text-secondary);
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  transition: var(--transition-fast);
-}
-
-.bg-preset-btn:hover,
-.bg-preset-btn.active {
-  background: rgba(229, 184, 66, 0.1);
-  border-color: var(--accent-gold);
-  color: #fff;
-  box-shadow: 0 0 10px rgba(229, 184, 66, 0.15);
-}
-
-/* File Picker */
-.bg-file-label {
-  display: block;
-  background: rgba(229, 184, 66, 0.05);
-  border: 1px dashed rgba(229, 184, 66, 0.3);
-  border-radius: 8px;
-  padding: 12px;
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--accent-gold);
-  cursor: pointer;
-  font-weight: 600;
-  transition: var(--transition-fast);
-}
-
-.bg-file-label:hover {
-  background: rgba(229, 184, 66, 0.1);
-  border-color: var(--accent-gold);
-  box-shadow: var(--gold-glow);
-}
-
-.bg-file-input {
-  display: none;
-}
-
-/* URL Input group */
-.bg-url-group {
-  display: flex;
-  gap: 8px;
-}
-
-.bg-url-group input {
-  flex-grow: 1;
-  padding: 8px 12px;
-  font-size: 0.8rem;
-}
-
-.bg-url-group button {
-  padding: 8px 14px;
-  font-size: 0.8rem;
-}
-
-/* Opacity slider styles */
-.bg-opacity-slider {
-  width: 100%;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  outline: none;
-  -webkit-appearance: none;
-  margin-top: 10px;
-}
-
-.bg-opacity-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--accent-gold);
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(229, 184, 66, 0.5);
 }
 
 /* ==========================================
