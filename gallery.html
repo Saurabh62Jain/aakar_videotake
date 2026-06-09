@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore photos and past memories from the annual Aakar International Film Festival. Celebrating cinema in Madhya Pradesh.">
+  <title>Festival Gallery | Aakar International Film Festival</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <nav class="navbar scrolled" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+      </a>
+      
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Production House</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="festival.html">Film Festival</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="events.html">Current Events</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO BANNER
+       ========================================== -->
+  <header class="hero" style="min-height: 50vh; padding-top: 130px; padding-bottom: 50px;">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles"></div>
+    <div class="container" style="display: block; text-align: center;">
+      <span class="badge badge-gold">Memories</span>
+      <h1 class="hero-title" style="margin-top: 15px; margin-bottom: 15px; font-size: 3.5rem;">
+        Festival <span>Gallery</span>
+      </h1>
+      <p class="hero-description" style="margin: 0 auto; max-width: 650px;">
+        Glimpses of Aakar Filmotsav's rich history, celebrating cinema and local talents of Madhya Pradesh.
+      </p>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       FILM FESTIVAL GALLERY
+       ========================================== -->
+  <section class="section" id="festival-gallery" style="background-color: var(--bg-dark); border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      
+      <!-- 2025 Festival Photos -->
+      <div class="gallery-subheader" style="margin-top: 10px; margin-bottom: 25px;">
+        <h3 style="color: var(--accent-gold); font-family: var(--font-heading); font-size: 1.8rem; border-bottom: 2px solid rgba(229, 184, 66, 0.3); padding-bottom: 12px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+          📸 2025 Festival Photos
+        </h3>
+      </div>
+      <div class="gallery-grid" id="gallery-2025" style="margin-bottom: 60px;">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Past Memories -->
+      <div class="gallery-subheader" style="margin-top: 20px; margin-bottom: 25px;">
+        <h3 style="color: #fff; font-family: var(--font-heading); font-size: 1.8rem; border-bottom: 2px solid rgba(255, 255, 255, 0.15); padding-bottom: 12px; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+          ⏳ Past Memories
+        </h3>
+      </div>
+      <div class="gallery-grid" id="dynamic-gallery">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-desc">
+          <a href="index.html" class="logo">
+            <img src="images/logo_trans.png" alt="Aakar Videotake Logo" style="height: 48px; width: auto; vertical-align: middle;">
+          </a>
+          <p>Premium production house, international film festival hosting, and professional industry masterclasses.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Production House</a></li>
+            <li><a href="festival.html">Film Festival</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="workshops.html">Workshops</a></li>
+            <li><a href="events.html">Current Events</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-contact-info">
+            <span>📍 S-3, Indus Muskaan Plaza, Ayodhya Bypass Road (upto Muskaan Hospital), Bhopal - 462041, Madhya Pradesh, India</span>
+            <span>✉️ aakar87@yahoo.com / movimaker@in.com</span>
+            <span>📞 +91-7415508223</span>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Newsletter</h4>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Receive schedule updates & workshop openings.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+            <input type="email" placeholder="Your email address" class="form-control" required>
+            <button type="submit" class="btn btn-primary">Join</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aakar Videotake. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js?v=6.0"></script>
+</body>
+</html>

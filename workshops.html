@@ -152,8 +152,10 @@
         <li><a href="index.html">Production House</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="festival.html">Film Festival</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="workshops.html" class="active">Workshops</a></li>
         <li><a href="events.html">Current Events</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
       </ul>
     </div>
   </nav>
@@ -201,7 +203,7 @@
             <h3 class="workshop-title">Advanced Cinematography</h3>
             <p class="workshop-text">Master lighting design, camera movement, anamorphic shot composition, and camera settings on ARRI/RED cameras.</p>
             <span class="badge badge-gold" style="width: fit-content; margin-bottom: 20px;">Masterclass</span>
-            <a href="#booking" class="btn btn-secondary" style="width: 100%; text-align: center;">Reserve Seat</a>
+            <a href="mailto:aakar87@yahoo.com?subject=Workshop Inquiry" class="btn btn-secondary" style="width: 100%; text-align: center;">Inquire / Register</a>
           </div>
         </div>
 
@@ -219,7 +221,7 @@
             <h3 class="workshop-title">Screenplay & Character Development</h3>
             <p class="workshop-text">Drafting subplots, structuring character transformations, dialog design, and pitching to studio executives.</p>
             <span class="badge badge-amber" style="width: fit-content; margin-bottom: 20px;">Intermediate</span>
-            <a href="#booking" class="btn btn-secondary" style="width: 100%; text-align: center;">Reserve Seat</a>
+            <a href="mailto:aakar87@yahoo.com?subject=Workshop Inquiry" class="btn btn-secondary" style="width: 100%; text-align: center;">Inquire / Register</a>
           </div>
         </div>
 
@@ -237,92 +239,14 @@
             <h3 class="workshop-title">Davinci Resolve Color Grading</h3>
             <p class="workshop-text">Color correction, primary & secondary node structures, HDR color workflows, and matching look matching techniques.</p>
             <span class="badge badge-gold" style="width: fit-content; margin-bottom: 20px;">Masterclass</span>
-            <a href="#booking" class="btn btn-secondary" style="width: 100%; text-align: center;">Reserve Seat</a>
+            <a href="mailto:aakar87@yahoo.com?subject=Workshop Inquiry" class="btn btn-secondary" style="width: 100%; text-align: center;">Inquire / Register</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================
-       INTERACTIVE BOOKING CHART
-       ========================================== -->
-  <section class="section" id="booking" style="border-top: 1px solid var(--glass-border);">
-    <div class="container">
-      <div class="section-header">
-        <span class="badge badge-gold">Seat Booking</span>
-        <h2>Choose Your Seat</h2>
-        <p>Select your preferred seating layout for the next live masterclass at our E-102 Cinema Studio Hall.</p>
-      </div>
 
-      <div class="booking-grid">
-        <!-- Interactive seat layout -->
-        <div>
-          <div class="seats-container">
-            <div class="screen-indicator"></div>
-            <div class="seating-chart" id="seating-chart">
-              <!-- Dynamically generated seats inside main.js -->
-            </div>
-            
-            <div class="seating-legend">
-              <div class="legend-item">
-                <div class="seat"></div>
-                <span>Available</span>
-              </div>
-              <div class="legend-item">
-                <div class="seat selected"></div>
-                <span>Selected</span>
-              </div>
-              <div class="legend-item">
-                <div class="seat occupied"></div>
-                <span>Occupied</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Seating calculations and details -->
-        <div>
-          <div class="booking-receipt-box">
-            <h3 style="margin-bottom: 20px; font-size: 1.3rem;">Order Summary</h3>
-            
-            <form onsubmit="event.preventDefault(); if (document.getElementById('total-seats').innerText === '0') { alert('Please select at least one seat first!'); return; } alert('Booking Confirmed! Check your email for ticket instructions.'); this.reset(); location.reload();">
-              <div class="form-group" style="margin-bottom: 15px;">
-                <label class="form-label" style="font-size: 0.8rem;">Select Masterclass</label>
-                <select class="form-control select-control" required>
-                  <option value="cinematography">Advanced Cinematography ($149)</option>
-                  <option value="screenwriting">Screenplay & Character Development ($149)</option>
-                  <option value="color">Davinci Resolve Color Grading ($149)</option>
-                </select>
-              </div>
-
-              <div class="form-group" style="margin-bottom: 15px;">
-                <label class="form-label" style="font-size: 0.8rem;">Attendee Email</label>
-                <input type="email" class="form-control" placeholder="you@example.com" required>
-              </div>
-              
-              <div class="receipt-item">
-                <span>Selected Seats</span>
-                <span id="seat-numbers" style="color: var(--accent-gold); font-weight: 600;">None</span>
-              </div>
-              
-              <div class="receipt-item">
-                <span>Tickets Count</span>
-                <span id="total-seats" style="font-weight: 600;">0</span>
-              </div>
-
-              <div class="receipt-item total">
-                <span>Total Cost</span>
-                <span id="total-price">$0</span>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Book Tickets</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ==========================================
        FOOTER
@@ -342,8 +266,10 @@
           <ul class="footer-links">
             <li><a href="index.html">Production House</a></li>
             <li><a href="festival.html">Film Festival</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="workshops.html">Workshops</a></li>
             <li><a href="events.html">Current Events</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
           </ul>
         </div>
         
