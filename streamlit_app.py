@@ -6,20 +6,29 @@ st.set_page_config(
     layout="wide"
 )
 
-# Cleanly hide Streamlit header/footer and reset container margins without affecting iframes globally
-hide_streamlit_ui = """
+# Hide Streamlit UI elements and force the st.iframe element to be fullscreen
+fullscreen_iframe_style = """
     <style>
     header { visibility: hidden; }
     footer { visibility: hidden; }
     .block-container {
-        padding-top: 0rem !important;
-        padding-bottom: 0rem !important;
-        padding-left: 0rem !important;
-        padding-right: 0rem !important;
+        padding: 0rem !important;
+    }
+    /* Target only our st.iframe component and make it fullscreen */
+    iframe[title="st.iframe"] {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw !important;
+        height: 100vh !important;
+        border: none;
+        margin: 0;
+        padding: 0;
+        z-index: 999999;
     }
     </style>
 """
-st.markdown(hide_streamlit_ui, unsafe_allow_html=True)
+st.markdown(fullscreen_iframe_style, unsafe_allow_html=True)
 
-# Embed the static site using the recommended st.iframe with stretch height to fill the screen
-st.iframe("/app/static/index.html", height="stretch")
+# Embed the static site using the recommended st.iframe
+st.iframe("/app/static/index.html")
