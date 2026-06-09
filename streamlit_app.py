@@ -30,5 +30,5 @@ fullscreen_iframe_style = """
 """
 st.markdown(fullscreen_iframe_style, unsafe_allow_html=True)
 
-# Embed the static site using the recommended st.iframe
-st.iframe("/app/static/index.html")
+# Embed the public GitHub Pages URL of your website
+st.iframe("https://Saurabh62Jain.github.io/aakar_videotake/")
