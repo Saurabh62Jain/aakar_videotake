@@ -1,4 +1,6 @@
 import streamlit as st
+import streamlit.components.v1 as components
+import os
 
 st.set_page_config(
     page_title="Aakar Videotake",
@@ -23,8 +25,8 @@ fullscreen_mobile_style = """
         display: none !important;
     }
     
-    /* Target only our st.iframe component and ensure iOS/Android compatibility */
-    iframe[title="st.iframe"] {
+    /* Target all iframes to ensure full screen compatibility */
+    iframe {
         position: fixed;
         top: 0;
         left: 0;
@@ -38,10 +40,16 @@ fullscreen_mobile_style = """
         padding: 0;
         z-index: 999999;
     }
+
     </style>
 """
 st.markdown(fullscreen_mobile_style, unsafe_allow_html=True)
 
-# Embed the public GitHub Pages URL of your website
-st.iframe("https://aakarvideotake.com/")
+# Get absolute path of current folder containing index.html, css, js, etc.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Declare and render the component using the local static files
+# Streamlit's Tornado server will serve all files in this directory
+local_site = components.declare_component("aakar_site", path=current_dir)
+local_site()
 
