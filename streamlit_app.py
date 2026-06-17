@@ -1,4 +1,6 @@
 import streamlit as st
+import streamlit.components.v1 as components
+import os
 
 st.set_page_config(
     page_title="Aakar Videotake",
@@ -42,5 +44,11 @@ fullscreen_mobile_style = """
 """
 st.markdown(fullscreen_mobile_style, unsafe_allow_html=True)
 
-# Embed the static website served locally by Streamlit
-st.iframe("app/static/index.html")
+# Get absolute path of current folder containing the static folder
+current_dir = os.path.dirname(os.path.abspath(__file__))
+build_dir = os.path.join(current_dir, "static")
+
+# Declare and render the component using the local static files
+# Streamlit will serve all files in this directory with correct MIME types
+local_site = components.declare_component("aakar_site", path=build_dir)
+local_site()
