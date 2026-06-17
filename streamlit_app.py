@@ -46,9 +46,9 @@ st.markdown(fullscreen_mobile_style, unsafe_allow_html=True)
 
 # Get absolute path of current folder containing the static folder
 current_dir = os.path.dirname(os.path.abspath(__file__))
-build_dir = os.path.join(current_dir, "static")
 
 # Declare and render the component using the local static files
 # Streamlit will serve all files in this directory with correct MIME types
-local_site = components.declare_component("aakar_site", path=build_dir)
+local_site = components.declare_component("aakar_site", path=current_dir)
 local_site()
+
