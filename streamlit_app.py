@@ -43,4 +43,5 @@ fullscreen_mobile_style = """
 st.markdown(fullscreen_mobile_style, unsafe_allow_html=True)
 
 # Embed the public GitHub Pages URL of your website
-st.iframe("https://Saurabh62Jain.github.io/aakar_videotake/")
+st.iframe("https://aakarvideotake.com/")
+
