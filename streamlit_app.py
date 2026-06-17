@@ -1,6 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
-import os
 
 st.set_page_config(
     page_title="Aakar Videotake",
@@ -40,16 +38,9 @@ fullscreen_mobile_style = """
         padding: 0;
         z-index: 999999;
     }
-
     </style>
 """
 st.markdown(fullscreen_mobile_style, unsafe_allow_html=True)
 
-# Get absolute path of current folder containing index.html, css, js, etc.
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Declare and render the component using the local static files
-# Streamlit's Tornado server will serve all files in this directory
-local_site = components.declare_component("aakar_site", path=current_dir)
-local_site()
-
+# Embed the static website served locally by Streamlit
+st.iframe("app/static/index.html")
