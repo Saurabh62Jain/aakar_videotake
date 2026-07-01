@@ -271,9 +271,9 @@
       <div class="video-section">
         <div class="glass-card" style="padding: 25px; border-color: rgba(229, 184, 66, 0.2); text-align: center; margin-bottom: 45px;">
           <span class="badge badge-gold" style="margin-bottom: 12px;">Spotlight Video</span>
-          <h2 style="font-family: var(--font-heading); color: #fff; font-size: 1.8rem; margin-bottom: 15px;">Film Festival Spotlight: Sudipta Saxena</h2>
+          <h2 style="font-family: var(--font-heading); color: #fff; font-size: 1.8rem; margin-bottom: 15px;">Film Festival Spotlight: Actress Sudipta Saxena</h2>
           <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 25px auto; font-size: 0.95rem; line-height: 1.6;">
-            Watch our featured film festival spotlight featuring Sudipta Saxena.
+            Watch our featured film festival spotlight featuring Actress Sudipta Saxena.
           </p>
           <div class="video-wrapper">
             <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; object-fit: contain;">
@@ -436,12 +436,12 @@
     // 1. Initial Default Articles Array
     const defaultArticles = [
       {
-        id: "5",
-        title: "Film Festival Spotlight: Sudipta Saxena",
+        id: "6",
+        title: "Film Festival Spotlight: Actress Sudipta Saxena",
         date: "June 10, 2026",
         category: "Film Festival",
-        summary: "Watch our featured film festival spotlight featuring Sudipta Saxena.",
-        content: "We are thrilled to share our latest video showcase featuring Sudipta Saxena. <br/><br/><div style='position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 20px 0; background: #000;'><video controls style='position: absolute; top:0; left:0; width:100%; height:100%; border:0; object-fit:contain;'><source src='film%20festival%20sudipta%20saxena.mp4' type='video/mp4'></video></div><br/>Check out the full video above for more filmmaking insights, masterclass previews, and official selections from the Aakar Film Festival."
+        summary: "Watch our featured film festival spotlight featuring Actress Sudipta Saxena.",
+        content: "We are thrilled to share our latest video showcase featuring Actress Sudipta Saxena. <br/><br/><div style='position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin: 20px 0; background: #000;'><video controls style='position: absolute; top:0; left:0; width:100%; height:100%; border:0; object-fit:contain;'><source src='film%20festival%20sudipta%20saxena.mp4' type='video/mp4'></video></div><br/>Check out the full video above for more filmmaking insights, masterclass previews, and official selections from the Aakar Film Festival."
       },
       {
         id: "1",
@@ -480,7 +480,7 @@
       } else {
         // Ensure our new default video article is present in localStorage, and filter out old ones
         let parsed = JSON.parse(articles);
-        parsed = parsed.filter(art => art.id !== "4" && art.id !== "5");
+        parsed = parsed.filter(art => art.id !== "4" && art.id !== "5" && art.id !== "6");
         parsed.unshift(defaultArticles[0]);
         localStorage.setItem('aakar_newsletter_articles', JSON.stringify(parsed));
         articles = JSON.stringify(parsed);
