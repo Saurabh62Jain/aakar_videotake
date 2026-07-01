@@ -187,10 +187,23 @@
       text-align: justify;
     }
     
-    /* Responsive Video Embed */
+    /* Responsive Video Embed & Grid */
     .video-section {
-      max-width: 800px;
+      max-width: 1100px;
       margin: 40px auto 20px auto;
+    }
+    
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    @media (max-width: 992px) {
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
     }
     
     .video-wrapper {
@@ -269,17 +282,44 @@
       
       <!-- Featured Video Showcase -->
       <div class="video-section">
-        <div class="glass-card" style="padding: 25px; border-color: rgba(229, 184, 66, 0.2); text-align: center; margin-bottom: 45px;">
-          <span class="badge badge-gold" style="margin-bottom: 12px;">Spotlight Video</span>
-          <h2 style="font-family: var(--font-heading); color: #fff; font-size: 1.8rem; margin-bottom: 15px;">Film Festival Spotlight: Actress Sudipta Saxena</h2>
-          <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 25px auto; font-size: 0.95rem; line-height: 1.6;">
-            Watch our featured film festival spotlight featuring Actress Sudipta Saxena.
+        <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+          <span class="badge badge-gold">Spotlight Videos</span>
+          <h2 style="font-family: var(--font-heading); color: #fff; font-size: 2.2rem; margin-top: 10px;">Featured Video Showcase</h2>
+          <p style="color: var(--text-secondary); max-width: 600px; margin: 10px auto 0 auto; font-size: 0.95rem; line-height: 1.6;">
+            Explore our curated spotlight videos featuring interviews, film festival entries, and production trailers.
           </p>
-          <div class="video-wrapper">
-            <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; object-fit: contain;">
-              <source src="film%20festival%20sudipta%20saxena.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+        </div>
+        
+        <div class="video-grid">
+          <!-- Video Card 1: Local Video -->
+          <div class="glass-card" style="padding: 25px; border-color: rgba(229, 184, 66, 0.2); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge badge-gold" style="margin-bottom: 12px;">Film Festival</span>
+              <h3 style="font-family: var(--font-heading); color: #fff; font-size: 1.4rem; margin-bottom: 10px;">Spotlight: Actress Sudipta Saxena</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px;">
+                Watch our featured film festival spotlight interview featuring Actress Sudipta Saxena.
+              </p>
+            </div>
+            <div class="video-wrapper">
+              <video controls style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; object-fit: contain;">
+                <source src="film%20festival%20sudipta%20saxena.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <!-- Video Card 2: YouTube Video -->
+          <div class="glass-card" style="padding: 25px; border-color: rgba(229, 184, 66, 0.2); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <span class="badge badge-amber" style="margin-bottom: 12px;">YouTube Showcase</span>
+              <h3 style="font-family: var(--font-heading); color: #fff; font-size: 1.4rem; margin-bottom: 10px;">Aakar Production Showcase</h3>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 20px;">
+                Watch our cinematic production highlights and creative festival trailer.
+              </p>
+            </div>
+            <div class="video-wrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/F-FdRsUBT1s?si=cfz6Ww-n2mYy5GdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
