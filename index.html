@@ -81,66 +81,6 @@
   </header>
 
   <!-- ==========================================
-       OFFICIAL FESTIVAL TOUR VIDEO
-       ========================================== -->
-  <section class="section" id="launch-tour-video" style="background-color: var(--bg-dark); border-top: 1px solid var(--glass-border); padding: 5rem 0;">
-    <div class="container" style="max-width: 900px; text-align: center;">
-      <div class="section-header">
-        <span class="badge badge-gold">Official Launch Video</span>
-        <h2>17th Aakar International Film Festival 2026</h2>
-        <p>Watch our official video tour for complete details on submissions, film categories, and key deadlines.</p>
-        
-        <!-- Language Switcher Buttons -->
-        <div style="margin-top: 25px; display: flex; justify-content: center; gap: 15px;">
-          <button id="btn-lang-en" onclick="switchTourVideo('en')" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border-radius: 6px;">English Version</button>
-          <button id="btn-lang-hi" onclick="switchTourVideo('hi')" class="btn btn-secondary" style="padding: 10px 22px; font-size: 0.9rem; font-weight: 600; cursor: pointer; border-radius: 6px;">हिन्दी संस्करण (Hindi)</button>
-        </div>
-      </div>
-      
-      <div style="margin-top: 35px; border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; background: #000; box-shadow: var(--glass-shadow); transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--glass-border-hover)'; this.style.boxShadow='var(--gold-glow)'" onmouseout="this.style.borderColor='var(--glass-border)'; this.style.boxShadow='var(--glass-shadow)'">
-        <video id="tour-video-player" controls poster="images/festival_poster_1.jpg" preload="metadata" style="width: 100%; display: block;">
-          <source id="tour-video-source" src="launch_video_english.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-    
-    <script>
-      function switchTourVideo(lang) {
-        var video = document.getElementById('tour-video-player');
-        var source = document.getElementById('tour-video-source');
-        var btnEn = document.getElementById('btn-lang-en');
-        var btnHi = document.getElementById('btn-lang-hi');
-        
-        if (lang === 'hi') {
-          source.src = 'launch_video_hindi.mp4';
-          video.poster = 'images/festival_poster_2.jpg';
-          
-          btnHi.style.background = 'var(--accent-gold)';
-          btnHi.style.color = '#000';
-          btnEn.style.background = 'transparent';
-          btnEn.style.color = 'var(--text-primary)';
-        } else {
-          source.src = 'launch_video_english.mp4';
-          video.poster = 'images/festival_poster_1.jpg';
-          
-          btnEn.style.background = 'var(--accent-gold)';
-          btnEn.style.color = '#000';
-          btnHi.style.background = 'transparent';
-          btnHi.style.color = 'var(--text-primary)';
-        }
-        
-        video.load();
-      }
-      
-      // Initialize styling on load
-      document.addEventListener("DOMContentLoaded", function() {
-        switchTourVideo('en');
-      });
-    </script>
-  </section>
-
-  <!-- ==========================================
        JOURNEY OF THE INSTITUTION (ABOUT US)
        ========================================== -->
   <section class="section" id="journey" style="background-color: var(--bg-darker); border-top: 1px solid var(--glass-border);">
